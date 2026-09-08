@@ -1,5 +1,3 @@
-# Write your MySQL query statement below
-
 SELECT request_at AS Day,
 ROUND(SUM(IF(status<>"completed",1,0))/COUNT(status),2) as "Cancellation Rate"
 FROM Trips 
